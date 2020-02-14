@@ -62,6 +62,7 @@ public class TicketController {
     public String deleteTicket(@PathVariable("id") Long id) {
         // Code here
         ticketService.deleteById(id);
+
         return "redirect:/";
     }
 
